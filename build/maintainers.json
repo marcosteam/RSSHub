@@ -5526,6 +5526,9 @@
   "/nintendo/system-update": [
     "hoilc"
   ],
+  "/nio/nioradio/:albumid": [
+    "marcosteam"
+  ],
   "/nippon/:category?": [
     "laampui"
   ],
