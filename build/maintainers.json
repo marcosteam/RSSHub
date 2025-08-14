@@ -771,9 +771,6 @@
     "youyou-sudo",
     "honue"
   ],
-  "/banshujiang/:category{.+}?": [
-    "nczitzk"
-  ],
   "/banyuetan/:id?": [
     "nczitzk"
   ],
@@ -2068,9 +2065,6 @@
     "blade0910"
   ],
   "/dgjyw*": [],
-  "/dgut/jwb/:type?": [
-    "1200522928"
-  ],
   "/dhu/jiaowu/news/:type?": [
     "KiraKiseki"
   ],
@@ -2100,9 +2094,6 @@
   ],
   "/digitalcameraworld/news": [
     "EthanWng97"
-  ],
-  "/digitalpolicyalert/activity-tracker/:filters?": [
-    "nczitzk"
   ],
   "/dingshao/share/:shortId": [
     "TonyRL"
@@ -2478,9 +2469,6 @@
   "/embassy/:country/:city?": [
     "HenryQW"
   ],
-  "/englishhome/": [
-    "johan456789"
-  ],
   "/enterprisecraftsmanship/archives": [
     "liyaozhong"
   ],
@@ -2844,8 +2832,7 @@
   ],
   "/gamer/hot/:bsn": [
     "nczitzk",
-    "TonyRL",
-    "kennyfong19931"
+    "TonyRL"
   ],
   "/gamer/ani/anime/:sn": [
     "maple3142",
@@ -5169,9 +5156,6 @@
   "/misskon/top/:k": [
     "Urabartin"
   ],
-  "/mit/hanlab/blog": [
-    "johan456789"
-  ],
   "/mittrchina/:type?": [
     "EsuRt",
     "queensferryme"
@@ -5207,9 +5191,6 @@
     "TonyRL"
   ],
   "/modelscope/datasets": [
-    "TonyRL"
-  ],
-  "/modelscope/learn": [
     "TonyRL"
   ],
   "/modelscope/models": [
@@ -5412,9 +5393,6 @@
   ],
   "/neu/news/:type": [
     "JeasonLau"
-  ],
-  "/neu/yz/:type": [
-    "paintstar"
   ],
   "/newmuseum/exhibitions": [
     "chazeon"
@@ -6780,9 +6758,6 @@
   ],
   "/scoop/apps/:query?": [
     "nczitzk"
-  ],
-  "/scpta/news/:category": [
-    "Yeye-0426"
   ],
   "/sctv/programme/:id?/:limit?/:isFull?": [
     "nczitzk"
@@ -9099,9 +9074,6 @@
   ],
   "/zju/physics/:type": [
     "Caicailiushui"
-  ],
-  "/zju/sis/:type": [
-    "Alex222222222222"
   ],
   "/zjut/news/:type": [
     "junbaor",
