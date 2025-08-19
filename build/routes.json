@@ -17736,6 +17736,55 @@
     "url": "bookfere.com",
     "lang": "zh-CN"
   },
+  "bookwalker": {
+    "routes": {
+      "/search/:filter?": {
+        "path": "/search/:filter?",
+        "name": "搜尋",
+        "url": "www.bookwalker.com.tw",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/bookwalker/search/order=sell_desc&s=34",
+        "parameters": {
+          "filter": {
+            "description": "过滤器，默认为 `order=sell_desc`，即依發售日新至舊排序"
+          }
+        },
+        "description": ":::tip\n订阅 [依發售日新至舊排序的文學小說](https://www.bookwalker.com.tw/search?order=sell_desc&s=34)，其源网址为 `https://www.bookwalker.com.tw/search?order=sell_desc&s=34`，请参考该 URL 指定部分构成参数，此时路由为 [`/bookwalker/search/order=sell_desc&s=34`](https://rsshub.app/bookwalker/search/order=sell_desc&s=34)。\n:::\n",
+        "categories": [
+          "shopping"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.bookwalker.com.tw/search"
+            ],
+            "target": "/bookwalker/search"
+          }
+        ],
+        "view": 0,
+        "location": "search.ts",
+        "module": "() => import('@/routes/bookwalker/search.ts')"
+      }
+    },
+    "name": "BOOKWALKER電子書",
+    "url": "bookwalker.com.tw",
+    "categories": [
+      "shopping"
+    ],
+    "description": "",
+    "lang": "zh-TW"
+  },
   "booru": {
     "routes": {
       "/mmda/tags/:tags?": {
@@ -26207,6 +26256,45 @@
     "apiRoutes": {},
     "url": "comicskingdom.com",
     "lang": "en"
+  },
+  "commonhealth": {
+    "routes": {
+      "/": {
+        "path": "/",
+        "name": "最新內容",
+        "url": "commonhealth.com.tw",
+        "maintainers": [
+          "johan456789"
+        ],
+        "example": "/commonhealth",
+        "categories": [
+          "traditional-media"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "www.commonhealth.com.tw/"
+            ],
+            "target": "/"
+          }
+        ],
+        "location": "index.ts",
+        "module": "() => import('@/routes/commonhealth/index.ts')"
+      }
+    },
+    "name": "康健",
+    "apiRoutes": {},
+    "url": "commonhealth.com.tw",
+    "lang": "zh-TW"
   },
   "consumer": {
     "routes": {
@@ -42785,6 +42873,91 @@
     "name": "Gitpod",
     "apiRoutes": {},
     "url": "gitpod.io",
+    "lang": "en"
+  },
+  "gitstar-ranking": {
+    "routes": {
+      "/:category?": {
+        "path": "/:category?",
+        "name": "Ranking",
+        "url": "gitstar-ranking.com",
+        "maintainers": [
+          "nczitzk"
+        ],
+        "example": "/gitstar-ranking/repositories",
+        "parameters": {
+          "category": {
+            "description": "Category, Repositories by default",
+            "options": [
+              {
+                "label": "Users",
+                "value": "users"
+              },
+              {
+                "label": "Organizations",
+                "value": "organizations"
+              },
+              {
+                "label": "Repositories",
+                "value": "repositories"
+              }
+            ]
+          }
+        },
+        "description": ":::tip\nTo subscribe to [Repositories](https://gitstar-ranking.com/repositories), where the source URL is `https://gitstar-ranking.com/repositories`, extract the certain parts from this URL to be used as parameters, resulting in the route as [`/gitstar-ranking/repositories`](https://rsshub.app/gitstar-ranking/repositories).\n:::\n\n| Category                                                   | ID                                                                |\n| ---------------------------------------------------------- | ----------------------------------------------------------------- |\n| [Users](https://gitstar-ranking.com/users)                 | [users](https://rsshub.app/gitstar-ranking/users)                 |\n| [Organizations](https://gitstar-ranking.com/organizations) | [organizations](https://rsshub.app/gitstar-ranking/organizations) |\n| [Repositories](https://gitstar-ranking.com/repositories)   | [repositories](https://rsshub.app/gitstar-ranking/repositories)   |\n",
+        "categories": [
+          "programming"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportRadar": true,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "gitstar-ranking.com/:category"
+            ],
+            "target": "/:category"
+          },
+          {
+            "title": "Users",
+            "source": [
+              "gitstar-ranking.com/users"
+            ],
+            "target": "/users"
+          },
+          {
+            "title": "Organizations",
+            "source": [
+              "gitstar-ranking.com/organizations"
+            ],
+            "target": "/organizations"
+          },
+          {
+            "title": "Repositories",
+            "source": [
+              "gitstar-ranking.com/repositories"
+            ],
+            "target": "/repositories"
+          }
+        ],
+        "view": 0,
+        "location": "index.ts",
+        "module": "() => import('@/routes/gitstar-ranking/index.ts')"
+      }
+    },
+    "name": "Gitstar Ranking",
+    "apiRoutes": {},
+    "url": "gitstar-ranking.com",
+    "categories": [
+      "programming"
+    ],
+    "description": "",
     "lang": "en"
   },
   "globallawreview": {
@@ -70634,6 +70807,41 @@
         "description": "#### 新闻 {#mi-ha-you-yuan-shen-xin-wen}\n\n| 最新   | 新闻 | 公告   | 活动     |\n| ------ | ---- | ------ | -------- |\n| latest | news | notice | activity |",
         "location": "ys/news.ts",
         "module": "() => import('@/routes/mihoyo/ys/news.ts')"
+      },
+      "/zzz/:location?/:category?": {
+        "path": "/zzz/:location?/:category?",
+        "categories": [
+          "game"
+        ],
+        "example": "/mihoyo/zzz",
+        "parameters": {
+          "location": "区域，可选 `zh-cn`（国服，简中）或 `zh-tw`（国际服，繁中）",
+          "category": "分类，见下表，默认为最新"
+        },
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "radar": [
+          {
+            "source": [
+              "zzz.mihoyo.com/news"
+            ],
+            "target": "/zzz"
+          }
+        ],
+        "name": "绝区零",
+        "maintainers": [
+          "Yeye-0426"
+        ],
+        "url": "zzz.mihoyo.com/news",
+        "description": "#### 新闻 {#mi-ha-you-jue-qu-ling-xin-wen}\n\n| 最新     | 新闻 | 公告   | 活动     |\n| -------- | ---- | ------ | -------- |\n| news-all | news | notice | activity |",
+        "location": "zzz/news.ts",
+        "module": "() => import('@/routes/mihoyo/zzz/news.ts')"
       }
     },
     "name": "米哈游",

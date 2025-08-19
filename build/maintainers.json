@@ -1119,6 +1119,9 @@
   "/bookfere/:category": [
     "OdinZhang"
   ],
+  "/bookwalker/search/:filter?": [
+    "nczitzk"
+  ],
   "/booru/mmda/tags/:tags?": [
     "N78Wy"
   ],
@@ -1732,6 +1735,9 @@
   ],
   "/comicskingdom/:name": [
     "stjohnjohnson"
+  ],
+  "/commonhealth/": [
+    "johan456789"
   ],
   "/consumer/:category?/:language?/:keyword?": [
     "nczitzk"
@@ -3051,6 +3057,9 @@
   ],
   "/gitpod/changelog": [
     "TonyRL"
+  ],
+  "/gitstar-ranking/:category?": [
+    "nczitzk"
   ],
   "/globallawreview/": [
     "nczitzk"
@@ -5107,6 +5116,9 @@
   ],
   "/mihoyo/ys/:location?/:category?": [
     "nczitzk"
+  ],
+  "/mihoyo/zzz/:location?/:category?": [
+    "Yeye-0426"
   ],
   "/mindmeister/:category?/:language?": [
     "TonyRL"
