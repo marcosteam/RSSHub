@@ -742,6 +742,7 @@ export type RoutePath =
   | `/cowlevel/element/:id`
   | `/cpcaauto/news/:type?/:id?`
   | `/cpcey/:type?`
+  | `/cpp/event/:city?`
   | `/cpta/:category`
   | `/cpu/home`
   | `/cpu/jwc`

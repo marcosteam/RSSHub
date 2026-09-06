@@ -594,6 +594,9 @@
   "/cn-healthcare/index": [
     "qnloft"
   ],
+  "/cpp/event/:city?": [
+    "matcosteam"
+  ],
   "/crossbell/feeds/following/:characterId": [
     "DIYgod"
   ],

@@ -8184,6 +8184,44 @@
     "url": "cn-healthcare.com",
     "lang": "zh-CN"
   },
+  "cpp": {
+    "routes": {
+      "/event/:city?": {
+        "path": "/event/:city?",
+        "name": "近期会展",
+        "url": "cp.allcpp.cn/event/search",
+        "maintainers": [
+          "matcosteam"
+        ],
+        "example": "/cpp/event/310100",
+        "parameters": {
+          "city": {
+            "description": "地区行政区划代码，留空订阅全部地区。例如上海为 `310100`。代码可在 [活动页面](https://cp.allcpp.cn/event/search) 选择地区后从 URL 的 `city` 参数取得。"
+          }
+        },
+        "categories": [
+          "anime"
+        ],
+        "features": {
+          "requireConfig": false,
+          "requirePuppeteer": false,
+          "antiCrawler": false,
+          "supportBT": false,
+          "supportPodcast": false,
+          "supportScihub": false
+        },
+        "location": "event.ts",
+        "module": "() => import('@/routes/cpp/event.ts')"
+      }
+    },
+    "apiRoutes": {},
+    "name": "CPP 无差别同人站",
+    "url": "cp.allcpp.cn",
+    "categories": [
+      "anime"
+    ],
+    "lang": "zh-CN"
+  },
   "crossbell": {
     "routes": {
       "/feeds/following/:characterId": {
